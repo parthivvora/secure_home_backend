@@ -1,6 +1,7 @@
 const express = require("express");
 const admin = require("firebase-admin");
 const cors = require("cors");
+require("dotenv").config();
 
 const app = express();
 app.use(cors({ origin: "*" }));
@@ -44,7 +45,6 @@ app.post("/send-notification", async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`🚀 Server started at http://localhost:${PORT}`);
+app.listen(process.env.PORT, () => {
+  console.log(`🚀 Server started at http://localhost:${process.env.PORT}`);
 });
