@@ -1,0 +1,27 @@
+{
+  "name": "secure_home_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parthivvora/secure_home_backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parthivvora/secure_home_backend/issues"
+  },
+  "homepage": "https://github.com/parthivvora/secure_home_backend#readme",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^13.2.0",
+    "nodemon": "^3.1.9"
+  }
+}
