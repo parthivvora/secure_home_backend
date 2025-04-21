@@ -7,7 +7,7 @@ const app = express();
 app.use(cors({ origin: "*" }));
 app.use(express.json());
 
-const serviceAccount = require("./serviceAccountKey.json");
+const serviceAccount = JSON.parse(process.env.FIREBASE_CREDENTIALS);
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
